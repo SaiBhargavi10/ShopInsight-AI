@@ -1,8 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
+
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
+import Reviews from "./pages/Reviews";
+
 import "./App.css";
 
 function App() {
@@ -26,6 +30,11 @@ function App() {
         <Route
           path="/products/:id"
           element={<ProductDetails />}
+        />
+
+        <Route
+          path="/products/:id/reviews"
+          element={<Reviews />}
         />
 
       </Routes>
