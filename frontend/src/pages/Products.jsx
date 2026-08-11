@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Products() {
   const products = [
     {
@@ -105,9 +106,12 @@ function Products() {
                   </span>
                 </div>
 
-                <button className="view-product-button">
+                <Link
+                  to={`/products/${product.id}`}
+                  className="view-product-button"
+                >
                   View Product →
-                </button>
+                </Link>
 
               </div>
 
