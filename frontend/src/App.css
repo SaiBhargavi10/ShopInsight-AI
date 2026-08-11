@@ -51,3 +51,290 @@
 .login-button:hover {
   background-color: #1d4ed8;
 }
+
+/* ========================================
+   HOME PAGE
+======================================== */
+
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #eff6ff,
+    #ffffff
+  );
+
+  padding: 110px 30px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero-label {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #2563eb;
+  display: block;
+}
+
+.hero-description {
+  max-width: 650px;
+  margin: 0 auto 35px;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+/* Buttons */
+
+.primary-button {
+  background-color: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 7px;
+
+  padding: 13px 24px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #1d4ed8;
+}
+
+.secondary-button {
+  background-color: white;
+  color: #2563eb;
+
+  border: 1px solid #2563eb;
+  border-radius: 7px;
+
+  padding: 13px 24px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #eff6ff;
+}
+
+
+/* Common Section */
+
+.features-section,
+.how-section {
+  padding: 90px 30px;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.section-label {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+  color: #64748b;
+  font-size: 16px;
+}
+
+
+/* Features */
+
+.features-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.feature-card {
+  background-color: white;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+
+/* How It Works */
+
+.how-section {
+  background-color: #f8fafc;
+}
+
+.steps-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-number {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #dbeafe;
+  color: #2563eb;
+
+  font-weight: bold;
+}
+
+.step h3 {
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.step p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+
+/* Call To Action */
+
+.cta-section {
+  padding: 90px 30px;
+
+  text-align: center;
+
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  color: #dbeafe;
+  margin-bottom: 30px;
+}
+
+.cta-section .primary-button {
+  background-color: white;
+  color: #1e3a8a;
+}
+
+.cta-section .primary-button:hover {
+  background-color: #eff6ff;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .features-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+}
